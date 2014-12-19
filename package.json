@@ -1,0 +1,28 @@
+{
+  "name": "image-maxsize-webpack-loader",
+  "version": "0.0.1",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"not written yet :P\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "gm": "^1.17.0",
+    "loader-utils": "^0.2.5",
+    "extend": "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shekhei/image-resize-webpack-loader"
+  },
+  "keywords": [
+    "eskygo.com"
+  ],
+  "author": "Wong Shek Hei Felix",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shekhei/image-resize-webpack-loader/issues"
+  },
+}
