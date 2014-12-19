@@ -1,10 +1,10 @@
 Webpack module for max size(width/height)
------------------------------------------
+========================================
 To be frank, this is a very small loader :P
 
 
 Basic Usage
-===========
+-----------
 ```
 npm install image-maxsize-webpack-loader
 ```
@@ -35,16 +35,15 @@ module.exports = {
 ```
 
 Requirements
-============
+------------
 GraphicsMagick
 
-Windows User
-============
+###Windows User
 I truly recommand installing chocolatey, then you can just
 ```
 choco install graphicsmagick
 ```
 
 Credits
-=======
+-------
 I would have to say, thanks to people who wrote the gm bindings, that made it much easier!
