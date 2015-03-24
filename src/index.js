@@ -1,5 +1,6 @@
 var DEFAULTOPTIONS = {
-	skip: false
+	skip: false,
+	useImageMagick: false
 }
 module.exports = function(content) {
 	var loaderOptions = require('loader-utils').parseQuery(this.query);
@@ -8,7 +9,7 @@ module.exports = function(content) {
 		return content;
 	}
 	var options = require('loader-utils').parseQuery(this.resourceQuery), cb = this.async(), width = options['max-width'], height = options['max-height'];
-	require('gm')(content, this.resource).size(function(err, value){
+	require('gm')(content, this.resource).options({imageMagick: loaderOptions.useImageMagick}).size(function(err, value){
 		if ( err ) {
 			return cb(err);
 		}
