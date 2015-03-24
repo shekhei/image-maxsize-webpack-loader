@@ -6,6 +6,7 @@ var DEFAULTOPTIONS = {
 	skip: false
 }
 module.exports = function(content) {
+	this.cacheable(true);
 	var loaderOptions = loaderUtils.parseQuery(this.query);
 	loaderOptions = extend(true,DEFAULTOPTIONS, loaderOptions);
 	if ( loaderOptions.skip ) {
