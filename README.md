@@ -2,6 +2,9 @@ Webpack module for max size(width/height)
 ========================================
 To be frank, this is a very small loader :P
 
+ChangeLog
+---------
+v0.1.0 - Merged code from @danielberndt that added ImageMagick Support and various code cleanup 
 
 Basic Usage
 -----------
@@ -49,3 +52,4 @@ choco install graphicsmagick
 Credits
 -------
 I would have to say, thanks to people who wrote the gm bindings, that made it much easier!
+Thanks @danielberndt for cleaning up the code and adding the imagemagick options!
