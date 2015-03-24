@@ -14,7 +14,7 @@ and in webpack
 module.exports = {
     module: {
         loaders: [
-            { test: /\.(png|svg|jpe?g)(\?.*)?$/, loader: "url?limit=800!image-maxsize!image"}
+            { test: /\.(png|svg|jpe?g)(\?.*)?$/, loader: "url?limit=800!image!image-maxsize"}
         ]
     }
 };
