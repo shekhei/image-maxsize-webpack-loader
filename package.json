@@ -1,6 +1,6 @@
 {
   "name": "image-maxsize-webpack-loader",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "Just a simple loader to build resize images",
   "main": "src/index.js",
   "scripts": {
@@ -16,7 +16,10 @@
     "url": "https://github.com/shekhei/image-maxsize-webpack-loader"
   },
   "keywords": [
-    "image", "resize", "webpack", "loader"
+    "image",
+    "resize",
+    "webpack",
+    "loader"
   ],
   "author": "Wong Shek Hei Felix",
   "license": "ISC",
