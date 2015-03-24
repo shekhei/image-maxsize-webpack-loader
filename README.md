@@ -36,7 +36,9 @@ module.exports = {
 
 Requirements
 ------------
-GraphicsMagick
+GraphicsMagick _or_ ImageMagick
+
+if you prefer to use ImageMagick add `?useImageMagick=true` to the loader.
 
 ###Windows User
 I truly recommand installing chocolatey, then you can just
