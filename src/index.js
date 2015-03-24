@@ -2,6 +2,7 @@ var DEFAULTOPTIONS = {
 	skip: false
 }
 module.exports = function(content) {
+	this.cacheable(true);
 	var loaderOptions = require('loader-utils').parseQuery(this.query);
 	loaderOptions = require('extend')(true,DEFAULTOPTIONS, loaderOptions);
 	if ( loaderOptions.skip ) {
