@@ -14,7 +14,8 @@ module.exports = function(content) {
 		return content;
 	}
 	var options = loaderUtils.parseQuery(this.resourceQuery), cb = this.async(), width = options['max-width'], height = options['max-height'];
-	gm(content, this.resource).options({imageMagick: loaderOptions.useImageMagick}).size(function(err, value){
+    var resourcePath = require('url').parse(this.resource).pathname;
+	gm(content).options({imageMagick: loaderOptions.useImageMagick}).size(function(err, value){
 		if ( err ) {
 			return cb(err);
 		}
