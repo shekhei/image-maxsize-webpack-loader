@@ -7,9 +7,9 @@
     "test": "echo \"not written yet :P\""
   },
   "dependencies": {
-    "gm": "^1.17.0",
-    "loader-utils": "^0.2.5",
-    "extend": "*"
+    "extend": "^3.0.0",
+    "gm": "^1.19.0",
+    "loader-utils": "^0.2.11"
   },
   "repository": {
     "type": "git",
