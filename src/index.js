@@ -13,7 +13,10 @@ module.exports = function(content) {
 	if ( loaderOptions.skip ) {
 		return content;
 	}
-	var options = loaderUtils.parseQuery(this.resourceQuery), cb = this.async(), width = options['max-width'], height = options['max-height'];
+	var options = loaderUtils.parseQuery(this.resourceQuery);
+	var cb = this.async();
+	var width = options['max-width'];
+	var height = options['max-height'];
 	gm(content).options({imageMagick: loaderOptions.useImageMagick}).size(function(err, value){
 		if ( err ) {
 			return cb(err);
