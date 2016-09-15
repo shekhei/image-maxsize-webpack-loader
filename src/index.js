@@ -15,8 +15,8 @@ module.exports = function(content) {
 	}
 	var options = loaderUtils.parseQuery(this.resourceQuery);
 	var cb = this.async();
-	var width = options['max-width'];
-	var height = options['max-height'];
+	var width = options['max-width'] || loaderOptions['max-width'];
+	var height = options['max-height'] || loaderOptions['max-height'];
 	gm(content).options({imageMagick: loaderOptions.useImageMagick}).size(function(err, value){
 		if ( err ) {
 			return cb(err);
