@@ -4,8 +4,8 @@ This loader will resize images to fit maximum width / height dimensions while re
 
 Changelog
 ---------
-v0.1.0 - Merged code from @danielberndt that added ImageMagick support and various code cleanup
-v0.2.0 - Merged code from @chromakode allowing default parameters
+* v0.1.0 - Merged code from @danielberndt that added ImageMagick support and various code cleanup
+* v0.2.0 - Merged code from @chromakode allowing default parameters
 
 Basic Usage
 -----------
