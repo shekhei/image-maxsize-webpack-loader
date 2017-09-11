@@ -1,5 +1,5 @@
 [![Build Status](https://travis-ci.org/shekhei/image-maxsize-webpack-loader.svg?branch=master)](https://travis-ci.org/shekhei/image-maxsize-webpack-loader)
-[![npm version](https://badge.fury.io/js/image-maxsize-webpack-loader.svg)](https://www.npmjs.com/shekhei/image-maxsize-webpack-loader)
+[![npm version](https://badge.fury.io/js/image-maxsize-webpack-loader.svg)](https://www.npmjs.com/package/image-maxsize-webpack-loader)
 
 # Webpack module for max size (width/height)
 This loader will resize images to fit maximum width / height dimensions while retaining their aspect ratio.
