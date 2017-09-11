@@ -1,7 +1,15 @@
 language: node_js
 sudo: false
 node_js:
-    - "6"
-    - "7"
-    - "8"
-
+- '6'
+- '7'
+- '8'
+before_install:
+- sudo apt-get install graphicsmagick
+deploy:
+  provider: npm
+  email: "shekhei@gmail.com"
+  api_key:
+    secure: jQ5Te4+gboZqOSxvv8aPi098Wes7UD71PAOsSL5mNeAl11hADkZSkkP6rPyefTtdjR4Bpz7NCbjm7F+kazKjctQIR128R/bwEeMiRtlFzLpQSaUkO7nwm1zimYw0iG0YYN2tg+Wx7vVVPpkCN2kghvzdUmvO9ETcL8ywVp9Jiqi7xFRTqhC49xvMtmIXF2XIeYdomW/g5fMznBOpB8S2AS65u/HfnLwpcR69Q9+MYcxYE3gP4mfWQ2sL2YnHZaLo8G3B3X/80rlYi//q/K5gDj0IFnAczrD6jU0ORwMwyxZrrekkgkn8ML20jT2Ag2qWtY3PJUqeD9xjguVLjwEi33oB1ENv80w1A0Aiq+AAhxUVC0dOQd8yNt+21+rr6NpmSvWJu9iQNu2LylC04p42rIg+gR5+ZrrPVFHPoD6dGoVMpGOj+3JSCqB6tvjSkUPuKih/m7UxHWAFEqnh4fjs/fQS+zT0eRmbFVra8+Pl7ibIV/wQRI6wdLeNuetMh5J3vTyGu09ZCOyPS081VE+71vcnXyFQRPVBlYClRSYuhBRFLPhWw8ajhsR/TCu0q/ehWkMERsV5uD/oTaMb4Gx3m0si7wa1hiJB/QrPzZ5+pxtFg6PxHDlleiLpwdZbERT4RQcH64MidQf7PLBNfFDn3A70e6LrnXCrRydoSWFUfdE=
+  on:
+    tags: true
