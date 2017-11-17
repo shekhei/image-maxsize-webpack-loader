@@ -40,7 +40,7 @@ module.exports = {
                         loader: "image-maxsize-webpack-loader",
                         options: {
                             "max-width": 800,    // sets max-width for gm/imagemagick scaling, in pixels
-                            "max-height": 600   // sets max-height for gm/imagemagick scaling, in pixels
+                            "max-height": 600,   // sets max-height for gm/imagemagick scaling, in pixels
                             "useImageMagick": false // defaults to false, this controls the usage of imagemagick or graphicsmagick, when false, graphicsmagick is used
                         }
                     }
