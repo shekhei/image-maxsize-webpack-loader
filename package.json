@@ -4,8 +4,8 @@
   "description": "Just a simple loader to build resize images",
   "main": "src/index.js",
   "scripts": {
-    "test-webpack4": "pushd test-webpack4; npm install && npm test; popd;",
-    "test-webpack2": "pushd test; npm install && npm test; popd;",
+    "test-webpack4": "cd test-webpack4; npm install && npm test; cd ..;",
+    "test-webpack2": "cd test; npm install && npm test; cd ..;",
     "test": "npm install && npm run test-webpack2 && npm run test-webpack4"
   },
   "dependencies": {
