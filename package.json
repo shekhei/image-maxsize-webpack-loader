@@ -1,18 +1,19 @@
 {
   "name": "image-maxsize-webpack-loader",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Just a simple loader to build resize images",
   "main": "src/index.js",
   "scripts": {
-    "test": "cd test; npm install; npm test"
+    "test-webpack4": "pushd test-webpack4; npm install && npm test; popd;",
+    "test-webpack2": "pushd test; npm install && npm test; popd;",
+    "test": "npm install && npm run test-webpack2 && npm run test-webpack4"
   },
   "dependencies": {
-    "extend": "^3.0.0",
-    "loader-utils": "^1.1.0"
+    "loader-utils": "^1.2.3"
   },
   "peerDependencies": {
     "gm": "^1.23.0",
-    "webpack": ">= 2 < 4"
+    "webpack": ">= 2"
   },
   "repository": {
     "type": "git",
@@ -30,6 +31,6 @@
     "url": "https://github.com/shekhei/image-maxsize-webpack-loader/issues"
   },
   "devDependencies": {
-    "gm": "^1.23.0"
+    "gm": "^1.23.1"
   }
 }

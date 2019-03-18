@@ -1,13 +1,12 @@
 var loaderUtils = require("loader-utils");
 var gm = require("gm");
-var extend = require("extend");
 
 var DEFAULTOPTIONS = {
 	useImageMagick: false
 }
 module.exports = function(content) {
 	this.cacheable(true);
-	const loaderOptions = extend(true,DEFAULTOPTIONS, loaderUtils.getOptions(this));
+	const loaderOptions = Object.assign(DEFAULTOPTIONS, loaderUtils.getOptions(this));
     let options = {};
     if ( typeof this.resourceQuery === 'string' && this.resourceQuery ) {
 	    options = loaderUtils.parseQuery(this.resourceQuery);
