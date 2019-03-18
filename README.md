@@ -8,12 +8,13 @@ This loader will resize images to fit maximum width / height dimensions while re
 * v0.1.0 - Merged code from @danielberndt that added ImageMagick support and various code cleanup
 * v0.2.0 - Merged code from @chromakode allowing default parameters
 * v1.0.0 - Upgrade to webpack >= 2 < 4 and adding tests
+* v1.1.0 - Modified and added tests for webpack4, removed "extend", modified to use Object.assign
 
 
 
 ## Basic Usage
 
-## Version 1 and above(with webpack2/3)
+## Version 1 and above(with webpack >= 2)
 ```
 npm install image-maxsize-webpack-loader gm
 ```
