@@ -1,3 +1,5 @@
+**Note: Please upgrade to >= v1.1.0, `extend` from v1.1.0 is removed due to vulnerability problems.
+
 [![Build Status](https://travis-ci.org/shekhei/image-maxsize-webpack-loader.svg?branch=master)](https://travis-ci.org/shekhei/image-maxsize-webpack-loader)
 [![npm version](https://badge.fury.io/js/image-maxsize-webpack-loader.svg)](https://www.npmjs.com/package/image-maxsize-webpack-loader)
 
